@@ -1,0 +1,22 @@
+.full-page {
+  min-height: 100vh;
+  height: auto;
+}
+
+.container {
+  margin: 0 5%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-content-spacing--center {
+  justify-content: center;
+}
+.flex-content-align--center {
+  align-items: center;
+}
+.flex-direction--col {
+  flex-direction: column;
+}
