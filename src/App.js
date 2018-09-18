@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Intro from "./components/Intro";
 import Nav from "./components/Nav";
+import Section from "./components/Section";
 import "./style.css";
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className="loaded">
         <Nav />
         <Intro />
+        <Section />
       </div>
     );
   }
