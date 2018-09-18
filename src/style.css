@@ -370,6 +370,12 @@ body {
   -moz-box-sizing: border-box;
   font-family: "Ubuntu", "monospace", "Proxima Nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
+*::-webkit-scrollbar {
+  background: #aaa; }
+
+*::-webkit-scrollbar-thumb {
+  background: #260053; }
+
 .full-page {
   min-height: 100vh;
   height: auto; }
