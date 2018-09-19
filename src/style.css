@@ -838,6 +838,15 @@ body {
     .contact-header {
       font-size: 38px; } }
 
+.cp p {
+  font-size: 10px; }
+  @media screen and (min-width: 425px) {
+    .cp p {
+      font-size: 12px; } }
+  @media screen and (min-width: 606px) {
+    .cp p {
+      font-size: 14px; } }
+
 .contact-subheader {
   color: #230046;
   font-size: 20px;
@@ -861,7 +870,7 @@ body {
   .contact-item img {
     height: auto;
     width: 32px;
-    transition: height,width  .2s ease-in-out; }
+    transition: height, width 0.2s ease-in-out; }
     @media screen and (min-width: 425px) {
       .contact-item img {
         width: 64px; } }

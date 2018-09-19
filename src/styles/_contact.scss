@@ -21,6 +21,18 @@
   }
 }
 
+.cp {
+  p {
+    font-size: 10px;
+    @media screen and (min-width: $xs) {
+      font-size: 12px;
+    }
+    @media screen and (min-width: $ms) {
+      font-size: 14px;
+    }
+  }
+}
+
 .contact-subheader {
   color: $purble;
   font-size: 20px;
@@ -39,17 +51,17 @@
   }
 }
 
-.contact-item{
-    margin-right: 10px;
-    &:last-child{
-        margin-right: 0px;
+.contact-item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0px;
+  }
+  img {
+    height: auto;
+    width: 32px;
+    transition: height, width 0.2s ease-in-out;
+    @media screen and (min-width: $xs) {
+      width: 64px;
     }
-    img{
-        height: auto;
-        width: 32px;
-        transition: height,width  .2s ease-in-out;
-        @media screen and (min-width: $xs) {
-            width: 64px;
-        }
-    }
+  }
 }
