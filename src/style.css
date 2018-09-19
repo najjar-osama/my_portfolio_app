@@ -450,7 +450,7 @@ body {
     .nav-list-item a {
       font-size: 20px; } }
 
-.active {
+.nav--dark .active {
   background-color: #16002d; }
 
 .loaded .nav {
