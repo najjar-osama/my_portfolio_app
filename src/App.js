@@ -91,9 +91,11 @@ const App = () => {
     <div className="loaded">
       <Nav />
       <Intro />
-      <Section>
+      <Section id="projects">
         <Carousel>{createCarouselItems()}</Carousel>
       </Section>
+      <Section id="about" />
+      <Section id="contact" />
     </div>
   );
 };
