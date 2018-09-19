@@ -41,11 +41,11 @@ const App = () => {
     <div className="loaded">
       <Nav />
       <Intro />
-      <Section id="projects">
+      <Section id="projects" active={false}>
         <Carousel>{createCarouselItems()}</Carousel>
       </Section>
-      <Section id="about" />
-      <Section id="contact" />
+      <Section id="about" active={true} />
+      <Section id="contact" active={true} />
     </div>
   );
 };

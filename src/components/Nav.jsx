@@ -10,16 +10,19 @@ class Nav extends React.Component {
     this.state = {
       links: [
         {
+          activeSection: false,
           linkText: "Projects",
           scrollTarget: "projects",
           isActive: false
         },
         {
+          activeSection: true,
           linkText: "About",
           scrollTarget: "about",
           isActive: false
         },
         {
+          activeSection: true,
           linkText: "Contact",
           scrollTarget: "contact",
           isActive: false
@@ -78,17 +81,22 @@ class Nav extends React.Component {
     this.setState(() => ({ links }));
   }
   createLinks() {
-    return this.state.links.map((link, index) => (
-      <li
-        onClick={() => {
-          this.scrollToElement(link.scrollTarget);
-        }}
-        className={`nav-list-item ${link.isActive ? "active" : ""}`}
-        key={index}
-      >
-        <a>{link.linkText}</a>
-      </li>
-    ));
+    return this.state.links.map(
+      (link, index) =>
+        link.activeSection ? (
+          <li
+            onClick={() => {
+              this.scrollToElement(link.scrollTarget);
+            }}
+            className={`nav-list-item ${link.isActive ? "active" : ""}`}
+            key={index}
+          >
+            <a>{link.linkText}</a>
+          </li>
+        ) : (
+          false
+        )
+    );
   }
   render() {
     return (
