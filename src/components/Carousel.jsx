@@ -10,7 +10,7 @@ class Carousel extends React.Component {
   }
   componentDidMount() {
     this.carousel = new Flickity(this.carouselElement.current, {
-      //autoPlay: 3000,
+      autoPlay: 3000,
       cellAlign: "center",
       contain: true,
       pauseAutoPlayOnHover: true,
@@ -19,7 +19,9 @@ class Carousel extends React.Component {
       wrapAround: true,
       setGallerySize: false
     });
-    //this.carousel.resize();
+  }
+  componentWillUnmount() {
+    this.carousel.destroy();
   }
   render() {
     return (
