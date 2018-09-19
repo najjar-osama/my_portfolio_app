@@ -11,7 +11,7 @@ const About = () => (
       <AboutImage />
       <AboutBody bodyContent={AboutSectionData.bodyContent} />
       <AboutTechStack
-        header={AboutSectionData.header}
+        header={AboutSectionData.techHeader}
         techList={AboutSectionData.techList}
       />
       <AboutLanguage languages={AboutSectionData.languages} />

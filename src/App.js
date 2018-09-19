@@ -10,7 +10,9 @@ import CarouselItemTags from "./components/CarouselItemTags";
 import CarouselItemLinks from "./components/CarouselItemLinks";
 import CarouselItems from "./data/CarouselItems";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import "./style.css";
+import "./images/favicon.png";
 
 const App = () => {
   const carouselItems = CarouselItems;
@@ -47,7 +49,9 @@ const App = () => {
       <Section id="about" active={true} cssClass="flex-content-align--center">
         <About />
       </Section>
-      <Section id="contact" active={true} />
+      <Section id="contact" active={true}>
+        <Contact />
+      </Section>
     </div>
   );
 };
