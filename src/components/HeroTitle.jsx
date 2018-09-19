@@ -1,7 +1,7 @@
 import React from "react";
 
 const HeroTitle = () => (
-  <a href="#" className="hero-title hero-title-anim">
+  <a className="hero-title hero-title-anim">
     <h1>
       <b>&lt;&nbsp;</b>
       Osa
