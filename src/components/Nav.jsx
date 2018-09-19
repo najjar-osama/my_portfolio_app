@@ -47,7 +47,6 @@ class Nav extends React.Component {
             linksArr[index + 1].scrollTarget
           );
           const nextOffset = nextScrollTarget ? nextScrollTarget.offsetTop : 0;
-          console.log("nexoffset", nextOffset);
           window.scrollY >= offset && window.scrollY < nextOffset
             ? (link.isActive = true)
             : (link.isActive = false);

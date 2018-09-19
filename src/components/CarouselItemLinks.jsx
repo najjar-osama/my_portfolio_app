@@ -6,7 +6,7 @@ const CarouselItemLinks = props => {
     <a href={link.href} target="_blank" key={index}>
       <img
         className={`icon ${link.type === "github" ? "github" : "link"}`}
-        src={link.type === "github" ? linkIcon : githubIcon}
+        src={link.type === "github" ? githubIcon : linkIcon}
         alt={`${link.type === "github" ? "github repo" : ""} link`}
       />
     </a>

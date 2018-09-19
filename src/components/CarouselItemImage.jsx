@@ -2,7 +2,11 @@ import React from "react";
 
 const CarouselItemImage = props => (
   <div className="project-image">
-    <img src={props.carouselItemImageSrc} alt={props.carouselItemImageAlt} />
+    <img
+      className={props.isCompany ? "company-logo" : ""}
+      src={props.carouselItemImageSrc}
+      alt={props.carouselItemImageAlt}
+    />
   </div>
 );
 
