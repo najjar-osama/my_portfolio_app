@@ -26,11 +26,13 @@ class Nav extends React.Component {
     let target = e.nativeEvent.target;
     target.tagName === "A" ? (target = target.parentElement) : target;
     const scrollTargetSelector = target.dataset.scrollto;
-    const offSet = document.getElementById(scrollTargetSelector).offsetTop || 0;
-    window.scrollTo({
-      top: offSet,
-      behavior: "smooth"
-    });
+    const offset = document.getElementById(scrollTargetSelector).offsetTop || 0;
+    if (offset) {
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth"
+      });
+    }
   }
   render() {
     return (
