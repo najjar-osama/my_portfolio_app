@@ -22,7 +22,7 @@ const Contact = props => (
           </a>
         ))}
       </div>
-      <div className="cp flex flex-content-spacing--center end-line">
+      <div className="cp">
         <p>{`Osama Mohammad Najjar © ${new Date().getFullYear()}`}</p>
       </div>
     </div>

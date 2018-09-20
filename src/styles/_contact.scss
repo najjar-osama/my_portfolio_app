@@ -22,9 +22,9 @@
 }
 
 .cp {
+  text-align: center;
   p {
     font-size: 10px;
-    text-align: center;
     @media screen and (min-width: $xs) {
       font-size: 12px;
     }
