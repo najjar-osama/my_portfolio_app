@@ -13,7 +13,7 @@ import gulp from "../images/gulp.png";
 
 export default {
   bodyContent:
-    "Hello! My name is Osama, I am from Syria and I live in the Netherlands.\n Enthusiastic developer who is continuously improving his skills and trying to bring the most modern technology and reshape it into modern applications and put it in the hands of the customers... so I love to be lost between the lines of code solving a problem or building something would draw a smile on users’ faces.",
+    "Hello!  It’s nice to have you here! My name is Osama, I am from Syria and I live in the Netherlands.\nI’m a Full-stack web developer with an eye for UI, utilizing modern frameworks and technology, and always in for new challenges…. love to be lost between the lines of code solving a problem or building something cool.",
   techHeader: "Tech stack..",
   techList: [
     html,

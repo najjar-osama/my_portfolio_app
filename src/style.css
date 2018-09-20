@@ -776,7 +776,7 @@ body {
   .about-body p {
     color: #fff;
     font-size: 15px;
-    text-align: center;
+    line-height: 1.5;
     transition: font-size 0.2s ease-in-out; }
     @media screen and (min-width: 425px) {
       .about-body p {
@@ -838,15 +838,16 @@ body {
     .contact-header {
       font-size: 38px; } }
 
-.cp p {
-  font-size: 10px;
+.cp {
   text-align: center; }
-  @media screen and (min-width: 425px) {
-    .cp p {
-      font-size: 12px; } }
-  @media screen and (min-width: 606px) {
-    .cp p {
-      font-size: 14px; } }
+  .cp p {
+    font-size: 10px; }
+    @media screen and (min-width: 425px) {
+      .cp p {
+        font-size: 12px; } }
+    @media screen and (min-width: 606px) {
+      .cp p {
+        font-size: 14px; } }
 
 .contact-subheader {
   color: #230046;
