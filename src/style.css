@@ -839,7 +839,8 @@ body {
       font-size: 38px; } }
 
 .cp p {
-  font-size: 10px; }
+  font-size: 10px;
+  text-align: center; }
   @media screen and (min-width: 425px) {
     .cp p {
       font-size: 12px; } }
